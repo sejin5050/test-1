@@ -1,0 +1,42 @@
+import java.util.Random;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class GeneticAlgorithm{
+
+	public static void main(String args) {
+		
+	int gene = 0;
+	int gene = (int)((Math.random()*100)+1);
+	 int [] sample_chromosome = new int[10];
+	int [] chromosome = new int[10];
+	int [] population = new int[5];
+	for (int i = 0; i < chromosome.length; i++) {
+			chromosome[i]= gene;
+			int[] new_chromosome = new int[10];
+			new_chromosome[i] = sample_chromosome[i];
+			for (int j = 0; j < population.length; j++) {
+				List<Integer> list1 = new ArrayList(Arrays.asList(new_chromosome))
+				List<Integer> list2 = new ArrayList(Arrays.asList(population))
+				list1.addAll(list2);
+				
+				Integer[] pop = list1.toArray(new Integer(0));
+				
+			
+			}		
+	}
+	
+	}double fitness_list [] = {6.0 , 9.0 , 4.0 , 3.0 , 5.0 , 8.0 , 3.0 , 6.0 , 3.0 , 3.0};	
+			
+			//룰렛 휠 이용하여 랜덤적으로 적합도 선별
+	
+	
+	static void exchange(chromosome)){
+		for(int i = chromosome.length -1 ; i >0 ; i--){
+			for(int j = 0 ; ; chromosome[j+1].getFitness()){
+				 chromosome tmp = chromosome[j];
+					chromosome[j] = chromosome[j+1];
+					chromosome[j+1] = tmp;
+					//유전체 안의 gene을 교차
+	}
